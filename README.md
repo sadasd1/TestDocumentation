@@ -24,7 +24,7 @@ Nucleus tools library is a set of methods/functions for platforms using Nucleus 
     
 *   Wifi applications
     
-
+https://sites.google.com/a/whirlpool.com/eex-tools/tools/ntl/NTL%20block%20diagram%20webpage.png?attredirects=0
 [![](https://sites.google.com/a/whirlpool.com/eex-tools/tools/ntl/NTL%20block%20diagram%20webpage.png)](https://sites.google.com/a/whirlpool.com/eex-tools/tools/ntl/NTL%20block%20diagram%20webpage.png?attredirects=0)
 
 For road-map and other details please refer attached presentation.
