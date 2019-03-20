@@ -16,7 +16,7 @@ Change the flow target of the your platform workspace to GESE Full Solution.
 
 For example GESE.HAWasher:
 
-![image alt text](image_0.png)
+![image alt text](Images/image_0.png)
 ![image alt text](image_1.png)
 
 Check and evaluate ChangeSets one by one, if there are actions to be taken from the product side, eg. run sql queries or write source code.
