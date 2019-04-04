@@ -54,7 +54,27 @@ You cannot create an empty folder *and then* add files to that folder, but rathe
 
 <table>
   <tr>
-    <td> public void GetDeviceAttributeTest()        {            byte target = 4;            var device = new SimulatorBox()            {                DeviceAddress = 14,            };            InitializeHandlers(device, out MessageHandlerBroker messageHandlerBroker, out Reveal.RevealHandler revHandler, out NucleusHandler nucleusHandler, out VariableHandler variableHandler);            var b1 = new List<byte>(Encoding.UTF8.GetBytes("WPR46XFXFXFBC"));            b1.Insert(0, 1);            var b2 = new List<byte>(Encoding.UTF8.GetBytes("00000001030000010213000000000000"));            b2.Insert(0, 2);            var b3 = new List<byte>(Encoding.UTF8.GetBytes("4757edb9"));            b3.Insert(0, 3);</td>
+    <td></td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Task.Delay(50).Wait();
+                var result = _ntlLocal.SetForceReset(15, 50, NTL.OpcodesResultData.ResetMode.ENTER_IAP).GetAwaiter();
+                _ntlLocal.Agent.EnterIAP(Parameters.NodeAddress);
+                Task.Delay(500);
+                Task.Run(async () => { this.IAPnodeInfo = await _ntlLocal.Agent.NodeInfoRequest(Parameters.NodeAddress); });
+                Task.Delay(500).Wait();
+                this.SoftwareVersion = this.IAPnodeInfo.SotwareVersion;
+                this.Timeout = IAPnodeInfo.Timeout;
+                RaisePropertyChangedEvent(() => this.Enabled);
+                _ntlLocal.Agent.ExitIAP(Parameters.NodeAddress).GetAwaiter();
+                SerialCommunicationSettings OldSerialCommunicationSettings = new SerialCommunicationSettings();
+                IniFileHelper.Instance.Deserialize(OldSerialCommunicationSettings, MACConfigIni.COMM_PARAMS);
+                _iBusDevice.SendCommand(80, new byte[] { 2, (byte)(OldSerialCommunicationSettings.Ccb2Node), 0 });
+</td>
   </tr>
 </table>
 
