@@ -1,81 +1,62 @@
-## Tools-Team Documentation link:
+## **Tools-Team Documentation link:**
 
 [https://github.whirlpool.com/sadasd1/Tools-Team](https://github.whirlpool.com/sadasd1/Tools-Team)
 
-## Forking?
+**SetUp:****[https://github.whirlpool.com/sadasd1/Tools-Tea**m](https://github.whirlpool.com/sadasd1/Tools-Team)
 
-A *fork* is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+* [Creating a repository ](https://help.github.com/en/articles/create-a-repo)
 
-Most commonly, forks are used to either propose changes to someone else's project or to use someone else's project as a starting point for your own idea.
+    * Note:  give the new file a name, (eg. .gitkeep which is *[conventionall*y](https://stackoverflow.com/a/7229996) used to make git track otherwise empty folders, not a git feature though)
 
-### Propose changes to someone else's project
+* [Forking a repository](https://help.github.com/en/articles/fork-a-repo)
 
-A great example of using forks to propose changes is for bug fixes. Rather than logging an issue for a bug you've found, you can:
+* [Managing files](https://help.github.com/en/articles/managing-files-on-github/)
 
-* Fork the repository.
+* [Being social](https://help.github.com/en/articles/be-social)
 
-* Make the fix.
+**Different options to add your contents/documents  in GitHub:**
 
-* Submit a *pull request* to the project owner.
+* [You can edit files directly on GitHub in any of your repositories using the file editor.](https://help.github.com/en/articles/editing-files-in-your-repository)
 
-If the project owner likes your work, they might pull your fix into the original repository!
+    * [https://help.github.com/en/articles/basic-writing-and-formatting-syntax](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
 
-### Use someone else's project as a starting point for your own idea.
+    * [Markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-At [the heart of open source](http://opensource.org/about) is the idea that by sharing code, we can make better, more reliable software.
+* Existing documents
 
-When creating your public repository from a fork of someone's project, make sure to include a [license file](http://choosealicense.com/) that determines how you want your project to be shared with others.
+    * [Drag and drop existing files](https://help.github.com/en/articles/adding-a-file-to-a-repository)
 
-For more information on open source, specifically how to create and grow an open source project, we've created [Open Source Guides](https://opensource.guide/) that will help you foster a healthy open source community by recommending best practices for creating and maintaining repositories for your open source project. You can also take a free [GitHub Learning Lab](https://lab.github.com/) course on maintaining open source communities.
+    * Google docs to markdown using Google script
 
-## How to create a new folder in GitHub?
+    * Webpages to markdown
 
-You cannot create an empty folder *and then* add files to that folder, but rather creation of a folder must happen *together with* adding of at least a single file. On github you can do it this way:
+* From Visual studio
 
-* go to the folder inside which you want to create another folder
+    * [MarkdownEditor](https://github.com/madskristensen/MarkdownEditor)
 
-* click on *New file*
+    * [Vsxmd](https://github.com/lijunle/Vsxmd)
 
-* on the text field for the file name, first write the folder name you want to create
+[Creating releases:](https://help.github.com/en/articles/creating-releases)
 
-* **then type ****/**. This creates a folder
+[Publishing with GithubPages](https://github.blog/2016-12-09-publishing-with-github-pages-now-as-easy-as-1-2-3/)
 
-* you can add more folders similarly
+**Markdown:**
 
-* finally, give the new file a name, (eg. .gitkeep which is *[conventionall*y](https://stackoverflow.com/a/7229996) used to make git track otherwise empty folders, not a git feature though)
+* Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents.
 
-* finally click *Commit new file*.
+* Markdown is a fast and easy way to take notes, create content for a website, and produce print-ready documents.
 
-![image alt text](image_0.png)
+* Markdown doesn’t have all the bells and whistles of word processors like Microsoft Word, but it’s good enough for creating basic documents like assignments and letters.
 
-![image alt text](image_1.png)
+**Explore Markdown with the following cool tools:**
+
+*  [Dillinger](https://dillinger.io/) is one of the best online Markdown editors.Just open the site and start typing in the left pane. A preview of the rendered document appears in the right pane.![image alt text](image_0.png)
+
+* Markdown and Visual Studio Code
+
+# ![image alt text](image_1.png)
+
+* **MarkdownPad** is a full-featured [Markdown](http://markdownpad.com/#whatIsMarkdown) editor for Windows.
 
 ![image alt text](image_2.png)
-
-<table>
-  <tr>
-    <td></td>
-  </tr>
-</table>
-
-
-<table>
-  <tr>
-    <td>Task.Delay(50).Wait();
-                var result = _ntlLocal.SetForceReset(15, 50, NTL.OpcodesResultData.ResetMode.ENTER_IAP).GetAwaiter();
-                _ntlLocal.Agent.EnterIAP(Parameters.NodeAddress);
-                Task.Delay(500);
-                Task.Run(async () => { this.IAPnodeInfo = await _ntlLocal.Agent.NodeInfoRequest(Parameters.NodeAddress); });
-                Task.Delay(500).Wait();
-                this.SoftwareVersion = this.IAPnodeInfo.SotwareVersion;
-                this.Timeout = IAPnodeInfo.Timeout;
-                RaisePropertyChangedEvent(() => this.Enabled);
-                _ntlLocal.Agent.ExitIAP(Parameters.NodeAddress).GetAwaiter();
-                SerialCommunicationSettings OldSerialCommunicationSettings = new SerialCommunicationSettings();
-                IniFileHelper.Instance.Deserialize(OldSerialCommunicationSettings, MACConfigIni.COMM_PARAMS);
-                _iBusDevice.SendCommand(80, new byte[] { 2, (byte)(OldSerialCommunicationSettings.Ccb2Node), 0 });
-</td>
-  </tr>
-</table>
-
 
